@@ -1,3 +1,1107 @@
-[gd_scene format=2]
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Resource/ground_grass.glb" type="PackedScene" id=1]
+[ext_resource path="res://crops_dirtRow.tscn" type="PackedScene" id=2]
+[ext_resource path="res://crops_cornStageB.tscn" type="PackedScene" id=3]
+[ext_resource path="res://crops_cornStageC.tscn" type="PackedScene" id=4]
+[ext_resource path="res://crops_dirtRowEnd.tscn" type="PackedScene" id=5]
+[ext_resource path="res://crops_cornStageA.tscn" type="PackedScene" id=6]
+[ext_resource path="res://crops_cornStageD.tscn" type="PackedScene" id=7]
+[ext_resource path="res://fence_simple.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Characters/Rogue.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Game/Worlds/KinematicBody.gd" type="Script" id=10]
+[ext_resource path="res://Characters/Rogue.gd" type="Script" id=11]
+[ext_resource path="res://Game/Worlds/Farm.gd" type="Script" id=12]
 
 [node name="Spatial" type="Spatial"]
+script = ExtResource( 12 )
+
+[node name="Farm Tiles Grass" type="Node" parent="."]
+
+[node name="ground_grass" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0 )
+
+[node name="ground_grass2" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0 )
+
+[node name="ground_grass3" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0 )
+
+[node name="ground_grass4" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0 )
+
+[node name="ground_grass5" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0 )
+
+[node name="ground_grass6" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0 )
+
+[node name="ground_grass7" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0 )
+
+[node name="ground_grass8" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+
+[node name="ground_grass9" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+
+[node name="ground_grass10" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
+
+[node name="ground_grass11" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0 )
+
+[node name="ground_grass12" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0 )
+
+[node name="ground_grass13" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0 )
+
+[node name="ground_grass14" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0 )
+
+[node name="ground_grass15" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0 )
+
+[node name="ground_grass16" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 0 )
+
+[node name="ground_grass17" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 1 )
+
+[node name="ground_grass18" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 1 )
+
+[node name="ground_grass19" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 1 )
+
+[node name="ground_grass20" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 1 )
+
+[node name="ground_grass21" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 1 )
+
+[node name="ground_grass22" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 1 )
+
+[node name="ground_grass23" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 1 )
+
+[node name="ground_grass24" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 1 )
+
+[node name="ground_grass25" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1 )
+
+[node name="ground_grass26" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1 )
+
+[node name="ground_grass27" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1 )
+
+[node name="ground_grass28" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1 )
+
+[node name="ground_grass29" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 1 )
+
+[node name="ground_grass30" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 1 )
+
+[node name="ground_grass31" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 1 )
+
+[node name="ground_grass32" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 1 )
+
+[node name="ground_grass33" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 2 )
+
+[node name="ground_grass34" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 2 )
+
+[node name="ground_grass35" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 2 )
+
+[node name="ground_grass36" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 2 )
+
+[node name="ground_grass37" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 2 )
+
+[node name="ground_grass38" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 2 )
+
+[node name="ground_grass39" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 2 )
+
+[node name="ground_grass40" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 2 )
+
+[node name="ground_grass41" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+
+[node name="ground_grass42" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 2 )
+
+[node name="ground_grass43" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2 )
+
+[node name="ground_grass44" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 2 )
+
+[node name="ground_grass45" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2 )
+
+[node name="ground_grass46" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 2 )
+
+[node name="ground_grass47" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2 )
+
+[node name="ground_grass48" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 2 )
+
+[node name="ground_grass49" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 3 )
+
+[node name="ground_grass50" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 3 )
+
+[node name="ground_grass51" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 3 )
+
+[node name="ground_grass52" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 3 )
+
+[node name="ground_grass53" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 3 )
+
+[node name="ground_grass54" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 3 )
+
+[node name="ground_grass55" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 3 )
+
+[node name="ground_grass56" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 3 )
+
+[node name="ground_grass57" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3 )
+
+[node name="ground_grass58" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 3 )
+
+[node name="ground_grass59" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 3 )
+
+[node name="ground_grass60" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3 )
+
+[node name="ground_grass61" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 3 )
+
+[node name="ground_grass62" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 3 )
+
+[node name="ground_grass63" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 3 )
+
+[node name="ground_grass64" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 3 )
+
+[node name="ground_grass65" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 4 )
+
+[node name="ground_grass66" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 4 )
+
+[node name="ground_grass67" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 4 )
+
+[node name="ground_grass68" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 4 )
+
+[node name="ground_grass69" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4 )
+
+[node name="ground_grass70" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 4 )
+
+[node name="ground_grass71" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 4 )
+
+[node name="ground_grass72" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 4 )
+
+[node name="ground_grass73" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4 )
+
+[node name="ground_grass74" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 4 )
+
+[node name="ground_grass75" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4 )
+
+[node name="ground_grass76" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 4 )
+
+[node name="ground_grass77" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4 )
+
+[node name="ground_grass78" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 4 )
+
+[node name="ground_grass79" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 4 )
+
+[node name="ground_grass80" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 4 )
+
+[node name="ground_grass81" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 5 )
+
+[node name="ground_grass82" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 5 )
+
+[node name="ground_grass83" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 5 )
+
+[node name="ground_grass84" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 5 )
+
+[node name="ground_grass85" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 5 )
+
+[node name="ground_grass86" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 5 )
+
+[node name="ground_grass87" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 5 )
+
+[node name="ground_grass88" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 5 )
+
+[node name="ground_grass89" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5 )
+
+[node name="ground_grass90" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 5 )
+
+[node name="ground_grass91" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 5 )
+
+[node name="ground_grass92" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 5 )
+
+[node name="ground_grass93" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 5 )
+
+[node name="ground_grass94" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 5 )
+
+[node name="ground_grass95" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 5 )
+
+[node name="ground_grass96" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 5 )
+
+[node name="ground_grass97" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 6 )
+
+[node name="ground_grass98" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 6 )
+
+[node name="ground_grass99" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 6 )
+
+[node name="ground_grass100" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 6 )
+
+[node name="ground_grass101" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 6 )
+
+[node name="ground_grass102" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 6 )
+
+[node name="ground_grass103" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 6 )
+
+[node name="ground_grass104" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 6 )
+
+[node name="ground_grass105" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6 )
+
+[node name="ground_grass106" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 6 )
+
+[node name="ground_grass107" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 6 )
+
+[node name="ground_grass108" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 6 )
+
+[node name="ground_grass109" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 6 )
+
+[node name="ground_grass110" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 6 )
+
+[node name="ground_grass111" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6 )
+
+[node name="ground_grass112" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 6 )
+
+[node name="ground_grass113" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 7 )
+
+[node name="ground_grass114" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 7 )
+
+[node name="ground_grass115" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 7 )
+
+[node name="ground_grass116" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 7 )
+
+[node name="ground_grass117" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 7 )
+
+[node name="ground_grass118" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 7 )
+
+[node name="ground_grass119" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 7 )
+
+[node name="ground_grass120" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 7 )
+
+[node name="ground_grass121" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 7 )
+
+[node name="ground_grass122" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 7 )
+
+[node name="ground_grass123" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 7 )
+
+[node name="ground_grass124" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 7 )
+
+[node name="ground_grass125" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 7 )
+
+[node name="ground_grass126" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 7 )
+
+[node name="ground_grass127" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 7 )
+
+[node name="ground_grass128" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 7 )
+
+[node name="ground_grass129" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 8 )
+
+[node name="ground_grass130" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 8 )
+
+[node name="ground_grass131" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 8 )
+
+[node name="ground_grass132" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 8 )
+
+[node name="ground_grass133" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 8 )
+
+[node name="ground_grass134" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 8 )
+
+[node name="ground_grass135" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 8 )
+
+[node name="ground_grass136" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 8 )
+
+[node name="ground_grass137" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8 )
+
+[node name="ground_grass138" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 8 )
+
+[node name="ground_grass139" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 8 )
+
+[node name="ground_grass140" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 8 )
+
+[node name="ground_grass141" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 8 )
+
+[node name="ground_grass142" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 8 )
+
+[node name="ground_grass143" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 8 )
+
+[node name="ground_grass144" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 8 )
+
+[node name="ground_grass145" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 9 )
+
+[node name="ground_grass146" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 9 )
+
+[node name="ground_grass147" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 9 )
+
+[node name="ground_grass148" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 9 )
+
+[node name="ground_grass149" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 9 )
+
+[node name="ground_grass150" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 9 )
+
+[node name="ground_grass151" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 9 )
+
+[node name="ground_grass152" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 9 )
+
+[node name="ground_grass153" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9 )
+
+[node name="ground_grass154" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 9 )
+
+[node name="ground_grass155" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 9 )
+
+[node name="ground_grass156" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 9 )
+
+[node name="ground_grass157" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 9 )
+
+[node name="ground_grass158" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 9 )
+
+[node name="ground_grass159" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 9 )
+
+[node name="ground_grass160" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 9 )
+
+[node name="ground_grass161" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 10 )
+
+[node name="ground_grass162" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 10 )
+
+[node name="ground_grass163" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 10 )
+
+[node name="ground_grass164" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 10 )
+
+[node name="ground_grass165" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 10 )
+
+[node name="ground_grass166" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 10 )
+
+[node name="ground_grass167" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 10 )
+
+[node name="ground_grass168" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 10 )
+
+[node name="ground_grass169" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10 )
+
+[node name="ground_grass170" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 10 )
+
+[node name="ground_grass171" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 10 )
+
+[node name="ground_grass172" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 10 )
+
+[node name="ground_grass173" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 10 )
+
+[node name="ground_grass174" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 10 )
+
+[node name="ground_grass175" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 10 )
+
+[node name="ground_grass176" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 10 )
+
+[node name="ground_grass177" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 11 )
+
+[node name="ground_grass178" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 11 )
+
+[node name="ground_grass179" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 11 )
+
+[node name="ground_grass180" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 11 )
+
+[node name="ground_grass181" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 11 )
+
+[node name="ground_grass182" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 11 )
+
+[node name="ground_grass183" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 11 )
+
+[node name="ground_grass184" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 11 )
+
+[node name="ground_grass185" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 11 )
+
+[node name="ground_grass186" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 11 )
+
+[node name="ground_grass187" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 11 )
+
+[node name="ground_grass188" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 11 )
+
+[node name="ground_grass189" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 11 )
+
+[node name="ground_grass190" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 11 )
+
+[node name="ground_grass191" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 11 )
+
+[node name="ground_grass192" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 11 )
+
+[node name="ground_grass193" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 12 )
+
+[node name="ground_grass194" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 12 )
+
+[node name="ground_grass195" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 12 )
+
+[node name="ground_grass196" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 12 )
+
+[node name="ground_grass197" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 12 )
+
+[node name="ground_grass198" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 12 )
+
+[node name="ground_grass199" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 12 )
+
+[node name="ground_grass200" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 12 )
+
+[node name="ground_grass201" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12 )
+
+[node name="ground_grass202" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 12 )
+
+[node name="ground_grass203" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 12 )
+
+[node name="ground_grass204" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 12 )
+
+[node name="ground_grass205" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 12 )
+
+[node name="ground_grass206" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 12 )
+
+[node name="ground_grass207" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 12 )
+
+[node name="ground_grass208" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 12 )
+
+[node name="ground_grass209" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 13 )
+
+[node name="ground_grass210" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 13 )
+
+[node name="ground_grass211" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 13 )
+
+[node name="ground_grass212" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 13 )
+
+[node name="ground_grass213" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 13 )
+
+[node name="ground_grass214" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 13 )
+
+[node name="ground_grass215" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 13 )
+
+[node name="ground_grass216" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 13 )
+
+[node name="ground_grass217" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 13 )
+
+[node name="ground_grass218" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 13 )
+
+[node name="ground_grass219" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 13 )
+
+[node name="ground_grass220" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 13 )
+
+[node name="ground_grass221" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 13 )
+
+[node name="ground_grass222" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 13 )
+
+[node name="ground_grass223" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 13 )
+
+[node name="ground_grass224" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 13 )
+
+[node name="ground_grass225" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 14 )
+
+[node name="ground_grass226" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 14 )
+
+[node name="ground_grass227" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 14 )
+
+[node name="ground_grass228" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 14 )
+
+[node name="ground_grass229" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 14 )
+
+[node name="ground_grass230" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 14 )
+
+[node name="ground_grass231" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 14 )
+
+[node name="ground_grass232" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 14 )
+
+[node name="ground_grass233" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 14 )
+
+[node name="ground_grass234" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 14 )
+
+[node name="ground_grass235" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 14 )
+
+[node name="ground_grass236" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 14 )
+
+[node name="ground_grass237" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 14 )
+
+[node name="ground_grass238" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 14 )
+
+[node name="ground_grass239" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 14 )
+
+[node name="ground_grass240" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 14 )
+
+[node name="ground_grass241" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 15 )
+
+[node name="ground_grass242" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 15 )
+
+[node name="ground_grass243" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 15 )
+
+[node name="ground_grass244" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 15 )
+
+[node name="ground_grass245" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 15 )
+
+[node name="ground_grass246" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 15 )
+
+[node name="ground_grass247" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 15 )
+
+[node name="ground_grass248" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 15 )
+
+[node name="ground_grass249" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15 )
+
+[node name="ground_grass250" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 15 )
+
+[node name="ground_grass251" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 15 )
+
+[node name="ground_grass252" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 15 )
+
+[node name="ground_grass253" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 15 )
+
+[node name="ground_grass254" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 15 )
+
+[node name="ground_grass255" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 15 )
+
+[node name="ground_grass256" parent="Farm Tiles Grass" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 15 )
+
+[node name="CropsDirt" type="Node" parent="."]
+
+[node name="crops_cornStageA" parent="CropsDirt" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.03619, 0, 6.02644 )
+
+[node name="crops_cornStageB" parent="CropsDirt" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.53038, -4.76837e-07, 6.01638 )
+
+[node name="crops_cornStageC" parent="CropsDirt" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.50047, 0, 6.07205 )
+
+[node name="crops_cornStageD" parent="CropsDirt" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.98351, 0, 5.99909 )
+
+[node name="crops_dirtRowEnd" parent="CropsDirt" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRowEnd2" parent="CropsDirt" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3, 0, 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRow" parent="CropsDirt" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRow2" parent="CropsDirt" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRowEnd3" parent="CropsDirt" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRowEnd4" parent="CropsDirt" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3, 0, 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRow3" parent="CropsDirt" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRow4" parent="CropsDirt" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRowEnd5" parent="CropsDirt" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRowEnd6" parent="CropsDirt" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3, 0, 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRow5" parent="CropsDirt" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRow6" parent="CropsDirt" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRowEnd7" parent="CropsDirt" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRowEnd8" parent="CropsDirt" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3, 0, 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRow7" parent="CropsDirt" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRow8" parent="CropsDirt" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_cornStageA2" parent="CropsDirt" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.54179, 0, 5.84426 )
+
+[node name="crops_cornStageB2" parent="CropsDirt" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.98269, 0, 5.98209 )
+
+[node name="crops_cornStageC2" parent="CropsDirt" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.44138, 0, 2.95892 )
+
+[node name="crops_cornStageD2" parent="CropsDirt" instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.98206, 0, 2.89341 )
+
+[node name="crops_dirtRowEnd9" parent="CropsDirt" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRowEnd10" parent="CropsDirt" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5, 0, 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRow9" parent="CropsDirt" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRow10" parent="CropsDirt" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRowEnd11" parent="CropsDirt" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRowEnd12" parent="CropsDirt" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5, 0, 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRow11" parent="CropsDirt" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRow12" parent="CropsDirt" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 4 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRowEnd13" parent="CropsDirt" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRowEnd14" parent="CropsDirt" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5, 0, 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRow13" parent="CropsDirt" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRow14" parent="CropsDirt" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 5 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRowEnd15" parent="CropsDirt" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRowEnd16" parent="CropsDirt" instance=ExtResource( 5 )]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5, 0, 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRow15" parent="CropsDirt" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="crops_dirtRow16" parent="CropsDirt" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Fence" type="Node" parent="."]
+
+[node name="fence_simple" parent="Fence" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
+
+[node name="fence_simple10" parent="Fence" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0 )
+
+[node name="fence_simple11" parent="Fence" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0 )
+
+[node name="fence_simple12" parent="Fence" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0 )
+
+[node name="fence_simple13" parent="Fence" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0 )
+
+[node name="fence_simple14" parent="Fence" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0 )
+
+[node name="fence_simple15" parent="Fence" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 0 )
+
+[node name="fence_simple2" parent="Fence" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0 )
+
+[node name="fence_simple3" parent="Fence" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0 )
+
+[node name="fence_simple4" parent="Fence" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0 )
+
+[node name="fence_simple5" parent="Fence" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 0 )
+
+[node name="fence_simple6" parent="Fence" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0 )
+
+[node name="fence_simple7" parent="Fence" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0 )
+
+[node name="fence_simple8" parent="Fence" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0 )
+
+[node name="fence_simple9" parent="Fence" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0 )
+
+[node name="Player" type="Node" parent="."]
+
+[node name="KinematicBody" type="KinematicBody" parent="Player"]
+script = ExtResource( 10 )
+
+[node name="Rogue" parent="Player/KinematicBody" instance=ExtResource( 9 )]
+script = ExtResource( 11 )
+
+[node name="Camera" type="Camera" parent="Player/KinematicBody/Rogue"]
+transform = Transform( 0.355394, -0.249723, 0.247657, 0, 0.352082, 0.355019, -0.351704, -0.252343, 0.250255, 5.93625, 9.82644, 6.11202 )
+fov = 32.2
+
+[node name="HUD" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="HUD"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -51.5
+margin_top = 38.0
+margin_right = 51.5
+margin_bottom = 79.0
+text = "Time Remaining"
+align = 1
+
+[node name="Label2" type="Label" parent="HUD"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -31.5
+margin_top = 78.0
+margin_right = 31.5
+margin_bottom = 119.0
+text = "0:59"
+align = 1
+
+[node name="Button" type="Button" parent="HUD"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -159.0
+margin_top = -80.0
+margin_right = -28.0
+margin_bottom = -25.0
+text = "Next Scene"
+
+[node name="Environment" type="Node" parent="."]
+
+[node name="DirectionalLight" type="DirectionalLight" parent="Environment"]
+transform = Transform( 1, 0, 0, 0, 0.428383, 0.903597, 0, -0.903597, 0.428383, 12.492, 12.7619, -9.33115 )
+light_energy = 0.25
+light_indirect_energy = 4.0
+shadow_enabled = true
+shadow_color = Color( 0.0784314, 0.0784314, 0.0784314, 1 )
+
+[connection signal="pressed" from="HUD/Button" to="." method="_on_Button_pressed"]
