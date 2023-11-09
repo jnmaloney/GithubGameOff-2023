@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="ScaleRogueLite"
-run/main_scene="res://Game/Worlds/Town.tscn"
+run/main_scene="res://Menu/Pages/Main Menu.tscn"
 config/icon="res://App/icon.png"
 
 [gui]
